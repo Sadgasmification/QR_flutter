@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "nom": "Hamburger maison",
+      "url": "https://www.la-viande.fr/sites/default/files/inline-images/hamburger.jpg",
+      "prix" : 12,
+      "description": "Hamburger maison avec steak de boeuf charolais de 200g grillé à la flamme, confit d'oignons rouges, pains confectionnés avec de la farine semi-complète, cheddar galloway et sauce au choix. Servi avec frites maison et salade assaisonnée",
+      "allergenes": ["Gluten", "Sésame"]
+    },
+    {
+      "id": 2,
+      "nom": "Spaghetti bolognese",
+      "url": "https://www.regal.fr/sites/art-de-vivre/files/spaghettis-bolognaise_istock.jpg",
+      "prix" : 10,
+      "description": "Tagliatelles, spaghettis ou linguine à la bolognese confectionnée avec de la farce de saucisse italienne et du hachis de boeuf ainsi que des lardons fumés français. Mijotée durant 3 heures avec du grand vin de Bordeaux et du Parmigiano Reggiano vieilli 24 mois en montagne",
+      "allergenes": ["Gluten"]
+    },
+    {
+      "id": 3,
+      "nom": "Pizza",
+      "url": "https://assets.afcdn.com/recipe/20160519/15342_w1024h768c1cx3504cy2338.jpg",
+      "prix" : 15,
+      "description": "Pizza traditionnelle italienne, base au choix : tomate ou crème, 5 ingrédients maximum au choix : blanc de poulet/merguez/hachis de boeuf/chorizo/mozzarella/basilic/lardons/maroilles/champignons/tomates/pommes de terre/bleu d'Auvergne/ananas/huile de truffe/oeuf",
+      "allergenes": ["Gluten"]
+    },
+    {
+      "id": 4,
+      "nom": "Pancakes",
+      "url": "https://files.meilleurduchef.com/mdc/photo/recette/pancake/pancake-640.jpg",
+      "prix" : 5,
+      "description": "Pancakes made in America",
+      "allergenes": ["Gluten", "Sésame"]
+    },
+    {
+      "id": 5,
+      "nom": "Kebab",
+      "url": "https://img.huffingtonpost.com/asset/5e690c9c230000841839f17d.jpeg?cache=m6hnJ2la6O&ops=1778_1000",
+      "prix" : 6,
+      "description": "Un excellent kebab salade, tomate, oignon sauce blanche",
+      "allergenes": ["Gluten"]
+    },
+    {
+      "id": 6,
+      "nom": "Tacos",
+      "url": "https://assets.afcdn.com/recipe/20190212/87658_w1024h768c1cx1663cy2227cxt0cyt0cxb6236cyb4154.jpg",
+      "prix" : 5,
+      "description": "Un délicieux tacos",
+      "allergenes": ["Gluten", "Sésame"]
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "nom": "Tricanti",
+      "lat": 50.3155377,
+      "lon" : 3.5188555,
+      "description": "Cuisine italienne",
+      "adresse": "83a Rue Roger Salengro, 59300 Famars",
+      "url": "",
+      "tel": "03 66 100 101",
+      "prix": "€",
+      "icon": "local_pizza",
+      "color": "green"
+    },
+    {
+      "id": 2,
+      "nom": "La boîte à frites",
+      "lat": 50.3152978,
+      "lon" : 3.5184438,
+      "description": "Friterie",
+      "adresse": "Rue Roger Salengro, 59300 Famars",
+      "url": "",
+      "tel": "03 66 100 102",
+      "prix": "€",
+      "icon": "restaurant",
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "nom": "Chez Aurél",
+      "lat": 50.3626707,
+      "lon" : 3.525731,
+      "description": "Cuisine du monde",
+      "adresse": "6 Place de l'hôpital général, 59300 Valenciennes",
+      "url": "",
+      "tel": "03 66 100 103",
+      "prix": "€",
+      "icon": "restaurant",
+      "color": "purple"
+    },
+    {
+      "id": 4,
+      "nom": "Chez Adrien",
+      "lat": 50.2870297,
+      "lon" : 3.2611377,
+      "description": "Cuisine gastronomique",
+      "adresse": "4 Rue Léon Blum, 59252 Marquette-en-Ostrevant",
+      "url": "",
+      "tel": "03 66 100 104",
+      "prix": "€",
+      "icon": "room_service",
+      "color": "blue"
+    },
+    {
+      "id": 5,
+      "nom": "Chez Marceau",
+      "lat": 50.3139235,
+      "lon" : 3.5195042,
+      "description": "Cuisine sans huile",
+      "adresse": "3bis Rue d'Artres 59300 Famars",
+      "url": "",
+      "tel": "03 66 100 105",
+      "prix": "€",
+      "icon": "local_bar",
+      "color": "yellow"
+    }
+]
