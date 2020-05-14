@@ -5,14 +5,14 @@ import 'widgets/InfosPatientWidget.dart';
 /* Theme de l'application */
 final appTheme = ThemeData(
   brightness: Brightness.light,
-  primaryColor: const Color(0xfffdf7ef),
+  primaryColor: Color.fromRGBO(34, 189, 200, 1),
   fontFamily: 'Montserrat',
   textTheme: TextTheme(
     headline: TextStyle(fontSize: 72.0),
     title: TextStyle(fontSize: 36.0),
     body1: TextStyle(fontSize: 18.0),
     body2: TextStyle(fontSize: 14.0, fontStyle: FontStyle.italic),
-    display1: TextStyle(fontSize: 24, fontFamily: 'Varela', color: Color.fromRGBO(34, 189, 121, 1)),
+    display1: TextStyle(fontSize: 24, fontFamily: 'Varela', color: Color.fromRGBO(34, 189, 200, 1)),
   ),
 );
 
@@ -60,6 +60,11 @@ class ApplicationWidgetPrincipal extends State<MyApp> {
       print("SUBSCRIPTION STATE CHANGED: ${changes.jsonRepresentation()}");
     });
 
+    OneSignal.shared
+    .setInAppMessageClickedHandler((OSInAppMessageAction action) {
+      print("In App Message Clicked: \n${action.jsonRepresentation().replaceAll("\\n", "\n")}");
+    });
+
     await OneSignal.shared
         .init("f7d2cc16-39b0-415c-b53b-76eef4acccbb", iOSSettings: settings);
 
@@ -78,14 +83,13 @@ class ApplicationWidgetPrincipal extends State<MyApp> {
     return Builder(
         builder: (context) => MaterialApp(
             home: DefaultTabController(
-              length: 2,
+              length: 1,
               child: Scaffold(
                 appBar: AppBar(
                   actions: <Widget>[messagesBadge],
                   bottom: TabBar(
                     tabs: [
-                      Tab(icon: Icon(Icons.fingerprint)),
-                      Tab(icon: Icon(Icons.local_hospital))
+                      Tab(icon: Icon(Icons.fingerprint))
                     ],
                   ),
                   title: Text('QR Code POC'),
@@ -93,8 +97,7 @@ class ApplicationWidgetPrincipal extends State<MyApp> {
                 body: TabBarView(
                   physics: NeverScrollableScrollPhysics(),
                   children: [
-                    (userId != null) ? InfosPatient(qrCodeData: userId) : InfosPatient(qrCodeData: "123"),
-                    (userId != null) ? InfosPatient(qrCodeData: userId) : InfosPatient(qrCodeData: "123")
+                    (userId != null) ? InfosPatient(qrCodeData: userId) : InfosPatient(qrCodeData: "")
                   ],
                 ),
               ),
